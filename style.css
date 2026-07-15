@@ -24,7 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 20px 5%;
     background: #00bcd4;
     border-radius: 10px;
     position: sticky;
@@ -56,9 +56,9 @@ nav a {
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    /* flex-wrap: wrap; */
 }
-.about_img{
+
+.about_img {
     flex: 1;
 }
 
@@ -67,16 +67,16 @@ nav a {
     border-radius: 20px;
 }
 
-.about-text{
+.about-text {
     flex: 1;
 }
 
-.about-text h2{
+.about-text h2 {
     font-size: 40px;
     margin-bottom: 20px;
 }
 
-.about-text p{
+.about-text p {
     font-size: 18px;
     line-height: 1.8;
     color: #ccc;
@@ -95,11 +95,11 @@ nav a {
 .btn:hover {
     background: white;
     color: #00bcd4;
-    box-shadow:0 0 20px #4fd9f1;
+    box-shadow: 0 0 20px #4fd9f1;
 }
 
 section {
-    padding: 70px 10%;
+    padding: 70px 5%;
 }
 
 .cards {
@@ -115,47 +115,66 @@ section {
     border-radius: 12px;
     flex: 1;
     min-width: 200px;
-    text-align: center;
     transition: .3s;
 }
 
 .card:hover {
     transform: translateY(-10px);
     background: #00bcd4;
-    box-shadow:0 0 20px #00d9ff;
+    box-shadow: 0 0 20px #00d9ff;
 }
 
-.footer{
-    margin-top:80px;
-    padding:50px 20px;
-    background:#252525;
-    text-align:center;
+.card1_img {
+    width: 100%;
+    height: 100%;
 }
 
-.socials{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    margin:25px 0;
+.card2_img {
+    width: 100%;
+    height: 100%;
 }
 
-.socials a{
-    width:55px;
-    height:55px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    border-radius:50%;
-    background:#1b1b1b;
-    color:#fff;
-    font-size:24px;
-    text-decoration:none;
-    transition:.3s;
+.card3_img {
+    width: 100%;
+    height: 100%;
 }
 
-.socials a:hover{
-    background:#00d9ff;
-    color:#111;
-    transform:translateY(-8px);
-    box-shadow:0 0 20px #00d9ff;
+.card4_img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    margin-top: 80px;
+    padding: 30px 20px;
+    background: #252525;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.socials a {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #1b1b1b;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.socials a:hover {
+    background: #00d9ff;
+    color: #111;
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #00d9ff;
 }
