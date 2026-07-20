@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -26,16 +27,59 @@ header {
     align-items: center;
     padding: 20px 5%;
     background: #00bcd4;
+    backdrop-filter: blur(10px);
     border-radius: 10px;
     position: sticky;
     top: 0;
     left: 0;
 }
 
+.logo {
+    font-size: 20px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: black;
+    text-shadow: 0 0 25px black,
+        0 0 50px black;
+    transform: scale(1.1);
+}
+
+span {
+    color: black;
+}
+
 nav a {
+    font-size: 15px;
     color: white;
     text-decoration: none;
-    margin-left: 20px;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a :active {
+    color: black;
+}
+
+.contact {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.contact:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 20px black;
 }
 
 .hero {
@@ -49,6 +93,10 @@ nav a {
 .hero img {
     width: 300px;
     border-radius: 50px;
+}
+
+.title {
+    color: #00bcd4;
 }
 
 .about {
@@ -103,22 +151,39 @@ section {
 }
 
 .cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 20px;
 }
 
-.card {
+.card1 {
     background: #152039;
-    padding: 30px;
+    padding: 5px;
     border-radius: 12px;
     flex: 1;
     min-width: 200px;
     transition: .3s;
 }
 
-.card:hover {
+.card2 {
+    background: #152039;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 200px;
+    transition: .3s;
+    text-align: center;
+}
+
+.card1:hover {
+    transform: translateY(-10px);
+    background: #00bcd4;
+    box-shadow: 0 0 20px #00d9ff;
+}
+
+.card2:hover {
     transform: translateY(-10px);
     background: #00bcd4;
     box-shadow: 0 0 20px #00d9ff;
@@ -143,6 +208,44 @@ section {
     width: 100%;
     height: 100%;
 }
+
+.card5_img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+
+.contact-form form {
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact-form form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: white;
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
 
 .footer {
     margin-top: 80px;

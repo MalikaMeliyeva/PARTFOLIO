@@ -12,13 +12,16 @@
 <body>
     <div class="container">
         <header>
-            <h1>M / M</h1>
+            <div class="logo">
+                <h1> <span>M</span> / M</h1>
+            </div>
             <nav>
                 <a href="#about">Men haqimda</a>
                 <a href="#skills">Ko'nikmalar</a>
                 <a href="#projects">Loyihalar</a>
                 <a href="#contact">Bog'lanish</a>
             </nav>
+            <button class="contact">Contact Me</button>
         </header>
         <section class="hero">
             <div>
@@ -43,7 +46,7 @@ o'zim yaratgan loyihalar va o'rgangan bilimlarimni ulashishga harakat qilaman</p
                 <img src="./images/profile1.jpg" alt="About image">
             </div>
             <div>
-                <h2>Men haqimda</h2>
+                <h2 class="title">Men haqimda</h2>
                 <pre>
 <p>Hozirgi kunda HTML, CSS yordamida saytlar yarataman.
 Man hozirda PDP JUNIORDA dasturlash boyicha frontend yonalishida o'qivomman.
@@ -56,45 +59,66 @@ Kelajakda zamonaviy va responsive web-saytlar yarataman.
         </section>
 
         <section id="skills">
-            <h2>Ko'nikmalar</h2>
+            <h2 class="title">Ko'nikmalar</h2>
             <div class="cards">
-                <div class="card card">
-                    <img src="./images/Html.jpg" alt="">
+                <div class="card2">
+                    <img class="card5_img" src="./images/Html.jpg" alt="">
                 </div>
-                <div class="card">
-                    <img src="./images/css.jpg" alt="">
+                <div class="card2">
+                    <img class="card5_img" src="./images/css.jpg" alt="">
 
                 </div>
             </div>
         </section>
 
         <section id="projects">
-            <h2>Loyihalar</h2>
+            <h2 class="title">Loyihalar</h2>
             <div class="cards">
-                <div class="card">
+                <div class="card1">
                     <a href="https://figma-mebel-lilac.vercel.app/"><img class="card1_img"
                             src="./images/Screenshot 2026-07-13 045331.png" alt=""></a>
                 </div>
-                <div class="card">
+                <div class="card1">
                     <a href="https://portfolio-three-flame-38.vercel.app/"><img class="card2_img"
                             src="./images/Screenshot 2026-07-13 045456.png" alt=""></a>
                 </div>
-                <div class="card">
+                <div class="card1">
                     <a href="https://healthy-foods-pi.vercel.app/"><img class="card3_img"
                             src="./images/Screenshot 2026-07-14 141637.png" alt=""></a>
                 </div>
-                <div class="card">
+                <div class="card1">
                     <a href="https://website-orpin-omega-18.vercel.app/"><img class="card4_img"
                             src="./images/Screenshot 2026-07-14 234341.png" alt=""></a>
                 </div>
             </div>
         </section>
+        <section class="contact-form">
+            <h2  class="contact-me">Contact Me</h2>
+
+            <form action="#">
+
+                <div class="input-box">
+                    <input type="text" placeholder="Toliq ism">
+                    <input type="email"
+                    placeholder="Email">
+                </div>
+
+                <div class="input-box">
+                    <input type="number" placeholder="Telefon raqam">
+                    <input type="text" placeholder="Mavzu">
+                </div>
+
+                <textarea name="" id="" cols="30" rows="10" placeholder="Xabaringiz"></textarea>
+            <input type="submit" value="Xabar yuborish" class="btn">
+            </form>
+        </section>
     </div>
 
     <footer class="footer">
+<div class="logo">
+    <h1> <span> M </span> / M</h1>
+</div>
         <h3>Web Dasturchi</h3>
-        <p>M.Malika</p>
-
         <div class="socials">
             <a href="https://t.me/https://t.me/BintuOlim21" target="_blank">
                 <i class="fa-brands fa-telegram"></i>
